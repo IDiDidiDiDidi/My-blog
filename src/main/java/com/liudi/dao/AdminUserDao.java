@@ -37,7 +37,7 @@ public interface AdminUserDao {
      * @param passward
      * @return
      */
-    AdminUser getAdminUserByNameAndPwd(@Param("userName") String userName, @Param("passward") String passward);
+    AdminUser getAdminUserByNameAndPwd(@Param("userName") String userName, @Param("passwordMD5") String passward);
 
     /**
      * 根据token 查询该用户

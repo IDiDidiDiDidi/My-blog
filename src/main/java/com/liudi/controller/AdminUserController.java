@@ -44,6 +44,22 @@ public class AdminUserController {
         return result;
     }
 
+    @RequestMapping(value = "login", method = RequestMethod.POST)
+    public Result login(@RequestBody AdminUser user) {
+        log.info(">>>>>>>>>>>>>>>>user:{}", user);
+        log.info(">>>>>>>>>>>>>>>>user.password:{}", user.getPassword());
+        Result result = ResultGenerator.genFailResult("登录失败");
+        if (StringUtils.isEmpty(user.getUserName()) || StringUtils.isEmpty(user.getPassword())) {
+            result.setMessage("请写明登录信息");
+        }
+        AdminUser adminUser = adminUserService.updateTokenAndLogin(user.getUserName(), user.getPassword());
+        if (adminUser != null) {
+            result = ResultGenerator.genSuccessResult(adminUser);
+        }
+        return result;
+    }
+
+
 
 
 }

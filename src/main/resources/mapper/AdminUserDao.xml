@@ -41,5 +41,9 @@
         select count(*) from tb_admin_user
         where is_deleted=0
     </select>
+
+    <update id="updateUserToken">
+        UPDATE tb_admin_user set user_token = #{newToken} where id =#{userId} and is_deleted = 0;
+    </update>
     
 </mapper>

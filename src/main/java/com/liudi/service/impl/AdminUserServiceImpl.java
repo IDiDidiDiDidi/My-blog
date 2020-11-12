@@ -3,8 +3,7 @@ package com.liudi.service.impl;
 import com.liudi.dao.AdminUserDao;
 import com.liudi.pojo.AdminUser;
 import com.liudi.service.AdminUserService;
-import com.liudi.utils.PageResult;
-import com.liudi.utils.PageUtil;
+import com.liudi.utils.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,6 +37,23 @@ public class AdminUserServiceImpl implements AdminUserService {
 
     @Override
     public AdminUser updateTokenAndLogin(String userName, String password) {
+        String md5Encode = MD5Util.MD5Encode(password, "UTF-8");
+        log.info(">>>>>>>>>>>>password:{}", password);
+        log.info(">>>>>>>>>>>>md5Encode:{}", md5Encode);
+        AdminUser adminUser = adminUserDao.getAdminUserByNameAndPwd(userName,  md5Encode);
+        log.info(">>>>>>>>>>>>>>>adminUser:{}", adminUser);
+        if (adminUser != null) {
+            String token = this.getNewToken(System.currentTimeMillis() + "", adminUser.getId());
+            if (adminUserDao.updateUserToken(adminUser.getId(), token) > 0) {
+                adminUser.setUserToken(token);
+                return adminUser;
+            }
+        }
         return null;
+    }
+
+    private String getNewToken(String sessionId, Long userId) {
+        String src = sessionId + userId + NumberUtil.genRandomNum(4);
+        return SystemUtil.genToken(src);
     }
 }
