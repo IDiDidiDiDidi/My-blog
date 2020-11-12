@@ -21,7 +21,7 @@ import java.util.Random;
  */
 @Controller
 @Slf4j
-public class controller {
+public class UploadController {
 
     //文件保存路径
     private final static String FILE_UPLOAD_PATH = "/home/liudi/Documents/code/LanQiao-Blog/upload/";

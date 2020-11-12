@@ -28,7 +28,7 @@ public interface AdminUserDao {
      * @param map
      * @return
      */
-    int AdminUserCount(Map map);
+    int adminUserCount(Map map);
 
     /**
      * 根据账号密码查询用户
