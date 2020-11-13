@@ -1,10 +1,3 @@
-/**
-*
-* @license Guriddo jqGrid JS - v5.3.0 - 2018-01-04
-* Copyright(c) 2008, Tony Tomov, tony@trirand.com
-* 
-* License: http://guriddo.net/?page_id=103334
-*/
 (function( factory ) {
 	"use strict";
 	if ( typeof define === "function" && define.amd ) {
