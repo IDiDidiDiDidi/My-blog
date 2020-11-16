@@ -1,87 +1,77 @@
 package com.liudi.pojo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-import java.util.Date;
-
 /**
  * Created with IntelliJ IDEA.
  *
  * @author liudi
- * @version 2020/11/11 下午8:05
+ * @version 2020/11/16 上午11:18
  */
 public class AdminUser {
 
-    private Long id;
-    private String userName;
-    private String password;
-    private String userToken;
+    private Integer adminUserId;
 
-    /**
-     * 1 已删除 0 未删除
-     */
-    private int isDeleted;
+    private String loginUserName;
 
-    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GTM+8")
-    private Date createTime;
+    private String loginPassword;
+
+    private String nickName;
+
+    private Byte locked;
+
+    public Integer getAdminUserId() {
+        return adminUserId;
+    }
+
+    public void setAdminUserId(Integer adminUserId) {
+        this.adminUserId = adminUserId;
+    }
+
+    public String getLoginUserName() {
+        return loginUserName;
+    }
+
+    public void setLoginUserName(String loginUserName) {
+        this.loginUserName = loginUserName == null ? null : loginUserName.trim();
+    }
+
+    public String getLoginPassword() {
+        return loginPassword;
+    }
+
+    public void setLoginPassword(String loginPassword) {
+        this.loginPassword = loginPassword == null ? null : loginPassword.trim();
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName == null ? null : nickName.trim();
+    }
+
+    public Byte getLocked() {
+        return locked;
+    }
+
+    public void setLocked(Byte locked) {
+        this.locked = locked;
+    }
 
     @Override
     public String toString() {
-        return "AdminUser{" +
-                "id='" + id + '\'' +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", userToken='" + userToken + '\'' +
-                ", isDeleted=" + isDeleted +
-                ", createTime=" + createTime +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", adminUserId=").append(adminUserId);
+        sb.append(", loginUserName=").append(loginUserName);
+        sb.append(", loginPassword=").append(loginPassword);
+        sb.append(", nickName=").append(nickName);
+        sb.append(", locked=").append(locked);
+        sb.append("]");
+        return sb.toString();
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getUserToken() {
-        return userToken;
-    }
-
-    public void setUserToken(String userToken) {
-        this.userToken = userToken;
-    }
-
-    public int getIsDeleted() {
-        return isDeleted;
-    }
-
-    public void setIsDeleted(int isDeleted) {
-        this.isDeleted = isDeleted;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 }
