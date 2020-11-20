@@ -7,4 +7,8 @@ http://localhost:8080/login.html 登录页面
 
 还是只写后端吧，前端先放一放，直接套别人写好的前端
 
-// 
+- 新加博客标签 
+    - 其中的 `@Transactional` 作用
+        - 声明式事务管理
+        - 访问权限：public的方法才起作用
+        - 事物：ACID
