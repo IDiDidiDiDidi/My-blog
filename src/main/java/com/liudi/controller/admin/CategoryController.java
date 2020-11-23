@@ -1,5 +1,6 @@
 package com.liudi.controller.admin;
 
+import com.liudi.pojo.BlogCategory;
 import com.liudi.service.CategoryService;
 import com.liudi.utils.PageQueryUtil;
 import com.liudi.utils.PageResult;
@@ -68,13 +69,50 @@ public class CategoryController {
         }
     }
 
-//    根据 id 获取单条分类记录接口
-//    public Result info() {
-//
-//    }
+    //    根据 id 获取单条分类记录接口
+    @GetMapping("/categories/info/{id}")
+    @ResponseBody
+    public Result info(@PathVariable("id") Integer id) {
+        if (id == null || id < 1) return ResultGenerator.genFailResult("非法参数！！");
 
-//    修改分类接口
-//    删除分类接口
+        BlogCategory category = categoryService.selectById(id);
+        return ResultGenerator.genSuccessResult(category);
+    }
 
+    //    修改分类接口
+    @RequestMapping(value = "/categories/update", method = RequestMethod.POST)
+    @ResponseBody
+    public Result update(@RequestParam("categoryId") Integer categoryId,
+                         @RequestParam("categoryName") String categoryName,
+                         @RequestParam("categoryIcon") String categoryIcon) {
+        if (categoryId == null || categoryId < 1) {
+            return ResultGenerator.genFailResult("非法参数！");
+        }
+        if (StringUtils.isEmpty(categoryName)) {
+            return ResultGenerator.genFailResult("请输入分类名称！");
+        }
+        if (StringUtils.isEmpty(categoryIcon)) {
+            return ResultGenerator.genFailResult("请选择分类图标！");
+        }
+        if (categoryService.updateCategory(categoryId, categoryName, categoryIcon)) {
+            return ResultGenerator.genSuccessResult();
+        } else {
+            return ResultGenerator.genFailResult("分类名称重复");
+        }
+    }
+
+    //    删除分类接口
+    @RequestMapping(value = "/categories/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public Result delete(@RequestBody Integer[] ids) {
+        if (ids.length < 1) {
+            return ResultGenerator.genFailResult("参数异常！");
+        }
+        if (categoryService.deleteBatch(ids)) {
+            return ResultGenerator.genSuccessResult();
+        } else {
+            return ResultGenerator.genFailResult("删除失败");
+        }
+    }
 
 }
