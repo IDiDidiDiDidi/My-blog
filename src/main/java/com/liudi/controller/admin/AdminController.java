@@ -2,6 +2,9 @@ package com.liudi.controller.admin;
 
 import com.liudi.pojo.AdminUser;
 import com.liudi.service.AdminUserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +22,7 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/admin")
+@Tag(name = "Admin")
 public class AdminController {
 
     @Resource
@@ -29,6 +33,8 @@ public class AdminController {
         return "admin/login";
     }
 
+    @Operation(summary = "Verify if the user phone number and password is correct and has access to at lease one account")
+    @ApiResponse(responseCode = "200", ref = "/mlcc-docs/passport.yml#/components/responses/VerifyLoginResponse")
     @PostMapping(value = "/login")
     public String login(@RequestParam("userName") String userName,
                         @RequestParam("password") String password,
@@ -66,6 +72,7 @@ public class AdminController {
     }
 
 
+
     @GetMapping("/profile")
     public String profile(HttpServletRequest request) {
         Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
@@ -78,6 +85,7 @@ public class AdminController {
         request.setAttribute("nickName", adminUser.getNickName());
         return "admin/profile";
     }
+
 
     @PostMapping("/profile/password")
     @ResponseBody
