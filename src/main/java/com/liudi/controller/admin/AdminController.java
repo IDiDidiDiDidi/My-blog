@@ -3,7 +3,11 @@ package com.liudi.controller.admin;
 import com.liudi.pojo.AdminUser;
 import com.liudi.service.AdminUserService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -33,12 +37,15 @@ public class AdminController {
         return "admin/login";
     }
 
-    @Operation(summary = "Verify if the user phone number and password is correct and has access to at lease one account")
-    @ApiResponse(responseCode = "200", ref = "/mlcc-docs/passport.yml#/components/responses/VerifyLoginResponse")
+    //
+//    @Operation(summary = "登录接口",
+//                description = "描述的文字",
+//                responses = {
+//                    @ApiResponse(description = "登录信息", content = @Content(mediaType = "application/json", schema = @Schema(implementation = AdminUser.class))),
+//                        @ApiResponse(responseCode = "400", description = "返回400代表错误信息")}, security = @SecurityRequirement(name = "需要验证"))
     @PostMapping(value = "/login")
-    public String login(@RequestParam("userName") String userName,
-                        @RequestParam("password") String password,
-                        @RequestParam("verifyCode") String verifyCode,
+    public String login(@Parameter(description = "账号", example = "P161713247") @RequestParam("userName") String userName,
+                        @RequestParam("password") String password, @Parameter(description = "密码") @RequestParam("verifyCode") String verifyCode,
                         HttpSession session) {
         if (StringUtils.isEmpty(verifyCode)) {
             session.setAttribute("errorMsg", "验证码不能为空");
@@ -72,7 +79,6 @@ public class AdminController {
     }
 
 
-
     @GetMapping("/profile")
     public String profile(HttpServletRequest request) {
         Integer loginUserId = (int) request.getSession().getAttribute("loginUserId");
@@ -87,10 +93,15 @@ public class AdminController {
     }
 
 
+    @Operation(summary = "登录接口",
+            description = "描述的文字",
+            responses = {
+                    @ApiResponse(description = "登录信息", content = @Content(mediaType = "application/json", schema = @Schema(implementation = AdminUser.class))),
+                    @ApiResponse(responseCode = "400", description = "返回400代表错误信息")}, security = @SecurityRequirement(name = "需要验证"))
     @PostMapping("/profile/password")
     @ResponseBody
-    public String passwordUpdate(HttpServletRequest request, @RequestParam("originalPassword") String originalPassword,
-                                 @RequestParam("newPassword") String newPassword) {
+    public String passwordUpdate(HttpServletRequest request, @Parameter(description = "老密码") @RequestParam("originalPassword") String originalPassword,
+                                 @Parameter(description = "新密码") @RequestParam("newPassword") String newPassword) {
         if (StringUtils.isEmpty(originalPassword) || StringUtils.isEmpty(newPassword)) {
             return "参数不能为空";
         }

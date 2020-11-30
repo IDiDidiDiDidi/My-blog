@@ -1,158 +1,33 @@
 components:
     schemas:
-        AccountDocument:
+        AdminUser:
             type: object
             properties:
-                oid:
+                adminUserId:
+                    type: Integer
+                    exmaple: 1
+                loginUserName:
                     type: string
-                    description: The account document oid hex string
-                    example: 5f6c75abedeab2072883a838
-                legacyId:
-                    type: integer
-                    description: The legacy id for MySQL tables
-                    example: 20
-                schoolId:
+                    example: 张三
+                loginPassword:
                     type: string
-                    description: The school id
-                    example: 41B22575-C41A-4473-90FE-9224BDC378AB
-                displaySchoolName:
+                    example: 123456
+                nickName:
                     type: string
-                    description: The shown name of the school
-                    example: 蓝墨大学
-                cnSpell:
-                    type: string
-                    description: The chinese spell for the school
-                    example: lanmodaxue
-                level:
-                    type: string
-                    enum:
-                        - SCHL
-                        - DEPT
-                    description: The account level
-                    example: SCHL
-                quizLibEnabled:
-                    type: boolean
-                    description: Is the school-scope quiz activity is enabled for this account
-                    default: false
-                department:
-                    type: object
-                    description: For DEPT level account only
-                    properties:
-                        id:
-                            type: string
-                            description: The department id
-                            example: 36814776-19D5-45D3-A4D4-08A9FAD1E378
-                        name:
-                            type: string
-                            description: The department name
-                            example: 计算机学院
-                        cnSpell:
-                            type: string
-                            description: The chinese speel for the department name
-                            example: jisuanjixueyuan
-        UserVo:
-            type: object
-            description: The current user
-            properties:
-                userId:
-                    type: string
-                    description: The user's id
-                    example: 2762D0A4-2A3B-417E-92FC-15B48AF90B79
-                fullAvatarUrl:
-                    type: string
-                    description: The user's avatar url, maybe null if not set
-                    example: https://mi-public-cdn.mosoteach.cn/xxxx.png
-                fullName:
-                    type: string
-                    description: The user's full name
-                    example: 张老师
-        AdminVo:
-            type: object
-            properties:
-                isMosoinkEmployee:
-                    type: boolean
-                    description: If the use is mosoink employee, only valid for DEPT_ADMIN
-                user:
-                    type: object
-                    $ref: '#/components/schemas/UserVo'
-                account:
-                    type: object
-                    $ref: '#/components/schemas/AccountDocument'
-                roles:
-                    type: array
-                    description: Which roles the user has to this account
-                    items:
-                        type: string
-                        enum:
-                            - MOSO_ADMIN
-                            - SYS_ADMIN
-                            - DEPT_ADMIN
-                            - COURSE_TEAM_LEADER
-                            - COURSE_TEAM_MEMBER
-                departments:
-                    type: array
-                    description: Only for DEPT_ADMIN, means the user can access to these departments
-                    items:
-                        type: object
-                        properties:
-                            id:
-                                type: string
-                            name:
-                                type: string
-                ownedCourses:
-                    type: array
-                    description: The coureses which the user plays as COURSE_TEAM_LEADER
-                    items:
-                        type: object
-                        properties:
-                            oid:
-                                type: string
-                                description: The course oid string
-                                example: 5f71e855ace94595ced2f913
-                            name:
-                                type: string
-                                description: The course name
-                                example: 语文
-                joinedCourses:
-                    type: array
-                    description: The coureses which the user plays as COURSE_TEAM_MEMBER
-                    items:
-                        type: object
-                        properties:
-                            oid:
-                                type: string
-                                description: The course oid string
-                                example: 5f71e855ace94595ced2f913
-                            name:
-                                type: string
-                                description: The course name
-                                example: 语文
+                    example: 张三图马斯特
+                locked:
+                    type: bete
+                    titile: 是否锁定 0未锁定 1已锁定无法登陆'
+                    example: 0
     responses:
-        VerifyLoginResponse:
+        LoginResponse:
             content:
                 application/json:
                     schema:
                         type: object
                         properties:
-                            user:
-                                type: object
-                                $ref: '#/components/schemas/UserVo'
                             accounts:
                                 type: array
                                 description: The accounts which this user can access, if login is successful
                                 items:
-                                    $ref: '#/components/schemas/AccountDocument'
-        LoginToAccountResponse:
-            content:
-                application/json:
-                    schema:
-                        type: object
-                        properties:
-                            token:
-                                type: string
-                                description: The token for this user
-                                example: 1a2b3c4d
-                            admin:
-                                type: object
-                                description: The user's privileges to this account
-                                $ref: '#/components/schemas/AdminVo'
+                                    $ref: '#/components/schemas/AdminUser'
