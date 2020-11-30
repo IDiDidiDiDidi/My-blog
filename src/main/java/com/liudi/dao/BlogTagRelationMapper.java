@@ -1,6 +1,7 @@
 package com.liudi.dao;
 
 import com.liudi.pojo.BlogTagRelation;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -18,4 +19,6 @@ public interface BlogTagRelationMapper {
     int updateByPrimaryKeySelective(BlogTagRelation record);
 
     int updateByPrimaryKey(BlogTagRelation record);
+
+    int batchInsert(@Param("relationList") List<BlogTagRelation> blogTagRelationList);
 }
