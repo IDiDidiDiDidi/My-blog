@@ -9,6 +9,8 @@ import com.liudi.pojo.BlogCategory;
 import com.liudi.pojo.BlogTag;
 import com.liudi.pojo.BlogTagRelation;
 import com.liudi.service.BlogService;
+import com.liudi.utils.PageQueryUtil;
+import com.liudi.utils.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -91,5 +93,27 @@ public class BlogServiceImpl implements BlogService {
             }
         }
         return "保存失败";
+    }
+
+    @Override
+    public Blog getBlogById(Long blogId) {
+        return blogMapper.selectByPK(blogId);
+    }
+
+    @Override
+    public String updateBlog(Blog blog) {
+        return null;
+    }
+
+    @Override
+    public PageResult getBlogsPage(PageQueryUtil pageUtil) {
+
+
+        return null;
+    }
+
+    @Override
+    public Boolean deleteBatch(Integer[] ids) {
+        return null;
     }
 }

@@ -30,14 +30,19 @@ import java.util.Random;
  * @author liudi
  * @version 2020/11/30 下午3:08
  */
-@Controller
-@RequestMapping("/admin")
+@RestController("/admin")
 public class BlogController {
 
     @Resource
     private CategoryService categoryService;
     @Resource
     private BlogService blogService;
+
+    @GetMapping("/blogs")
+    public String list(HttpServletRequest request) {
+        request.setAttribute("path", "blogs");
+        return "admin/blog";
+    }
 
     @GetMapping("/blogs/edit")
     public String edit(HttpServletRequest request) {
@@ -134,6 +139,7 @@ public class BlogController {
             return ResultGenerator.genFailResult(saveBlogResult);
         }
     }
+
 
 
 
