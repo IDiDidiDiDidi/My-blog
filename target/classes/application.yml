@@ -1,0 +1,20 @@
+logging:
+    config: "classpath:logback.xml"
+springdoc:
+    api-docs:
+        enabled: true
+    cache:
+        disabled: false
+    path: /v3/api-docs
+    packages-to-scan: com.liudi
+    default-produces-media-type: application/json
+    groups:
+        enabled: true
+    group-configs:
+        - group: Admin
+          paths-to-match:
+              - /admin/**
+    swagger-ui:
+        filter: true
+        operationsSorter: alpha
+        tagsSorter: alpha
