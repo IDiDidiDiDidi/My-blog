@@ -14,9 +14,15 @@ public class OtherTest {
 
     @Test
     public void test1() {
-        String s = "abcdefg";
-        String substring = s.substring(1, 5);
-        System.out.println(substring);
+        Long stuReportId = null;
+        if(stuReportId == null ) {
+            System.out.println("null");
+        } else {
+            System.out.println("1111");
+        }
 
     }
+
+
+
 }
