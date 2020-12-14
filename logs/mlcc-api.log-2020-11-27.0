@@ -1,0 +1,211 @@
+10:29:26.502  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 11875 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:29:26.505 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:29:26.507  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:29:27.101  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:29:27.104  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:29:27.129  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+10:29:27.410  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$5e065b4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:29:27.416  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$532bf8fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:29:27.755  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:29:27.768  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:29:27.776  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:29:27.776  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:29:27.784  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:29:27.858  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:29:27.858  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1315 ms
+10:29:27.885  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:29:27.889  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:29:27.890  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:29:27.890  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:29:27.891  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:29:27.891  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:29:28.613  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:29:29.032  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:29:29.035  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:29:29.045  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:29:29.047  INFO [main]  Application:59 - Started Application in 2.88 seconds (JVM running for 3.365)
+10:30:02.665  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:30:02.665  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:30:02.671  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 6 ms
+10:30:02.699  WARN [http-nio-28083-exec-2]  DefaultHandlerExceptionResolver:194 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+10:30:08.947  WARN [http-nio-28083-exec-4]  DefaultHandlerExceptionResolver:194 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+10:30:24.712  WARN [http-nio-28083-exec-7]  DefaultHandlerExceptionResolver:194 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+10:30:50.461  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+10:30:53.234  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 12212 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:30:53.237 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:30:53.239  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:30:53.778  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:30:53.780  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:30:53.800  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+10:30:54.063  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$23408696] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:30:54.069  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18662442] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:30:54.339  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:30:54.347  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:30:54.352  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:30:54.352  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:30:54.359  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:30:54.418  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:30:54.418  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1151 ms
+10:30:54.441  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:30:54.444  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:30:54.445  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:30:54.445  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:30:54.445  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:30:54.445  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:30:55.087  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:30:55.508  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:30:55.512  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:30:55.548  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:30:55.550  INFO [main]  Application:59 - Started Application in 2.614 seconds (JVM running for 2.994)
+10:30:59.220  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:30:59.220  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:30:59.227  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 6 ms
+10:31:58.069  INFO [http-nio-28083-exec-5]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 286 ms
+10:32:21.917  INFO [http-nio-28083-exec-7]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 58 ms
+10:35:19.473  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+10:35:22.896  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 13114 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:35:22.899 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:35:22.901  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:35:23.531  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:35:23.533  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:35:23.553  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+10:35:23.847  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$87b9559] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:35:23.854  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fda13305] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:35:24.205  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:35:24.220  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:35:24.231  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:35:24.231  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:35:24.241  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:35:24.328  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:35:24.329  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1377 ms
+10:35:24.363  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:35:24.366  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:35:24.366  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:35:24.367  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:35:24.367  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:35:24.367  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:35:25.169  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:35:25.633  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:35:25.636  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:35:25.646  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:35:25.648  INFO [main]  Application:59 - Started Application in 3.187 seconds (JVM running for 3.652)
+10:35:31.254  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:35:31.254  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:35:31.260  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 6 ms
+10:35:31.633  INFO [http-nio-28083-exec-3]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 229 ms
+10:47:16.528  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+10:47:20.099  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 16683 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:47:20.101 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:47:20.103  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:47:20.721  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:47:20.723  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:47:20.746  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+10:47:21.048  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$bdbc2252] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:21.053  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2e1bffe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:47:21.366  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:47:21.375  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:47:21.380  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:47:21.381  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:47:21.391  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:47:21.456  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:47:21.457  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1268 ms
+10:47:21.482  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:47:21.485  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:47:21.485  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:47:21.485  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:47:21.486  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:47:21.486  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:47:22.131  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:47:22.542  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:47:22.545  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:47:22.562  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:47:22.567  INFO [main]  Application:59 - Started Application in 2.816 seconds (JVM running for 3.224)
+10:47:26.721  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:47:26.721  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:47:26.727  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 6 ms
+10:47:27.201  INFO [http-nio-28083-exec-2]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 260 ms
+10:48:17.540  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+10:48:20.319  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 16925 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:48:20.322 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:48:20.329  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:48:20.916  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:48:20.919  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:48:20.941  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+10:48:21.238  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$25d37354] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:48:21.244  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1af91100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:48:21.536  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:48:21.545  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:48:21.550  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:48:21.551  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:48:21.557  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:48:21.615  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:48:21.615  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1255 ms
+10:48:21.639  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:48:21.642  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:48:21.642  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:48:21.642  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:48:21.643  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:48:21.643  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:48:22.273  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:48:22.667  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:48:22.670  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:48:22.698  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:48:22.699  INFO [main]  Application:59 - Started Application in 2.659 seconds (JVM running for 3.028)
+10:48:25.420  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:48:25.420  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:48:25.425  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 5 ms
+10:48:25.903  INFO [http-nio-28083-exec-2]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 242 ms
+10:49:18.618  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+10:49:21.339  INFO [main]  Application:50 - Starting Application on liudi-ubuntu with PID 17146 (/home/liudi/Documents/code/LanQiao-Blog/LD-Blog/target/classes started by liudi in /home/liudi/Documents/code/LanQiao-Blog/LD-Blog)
+10:49:21.342 DEBUG [main]  Application:53 - Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+10:49:21.344  INFO [main]  Application:675 - No active profile set, falling back to default profiles: default
+10:49:21.971  INFO [main]  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:49:21.973  INFO [main]  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+10:49:21.995  INFO [main]  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+10:49:22.280  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'redisConfig' of type [com.liudi.config.RedisConfig$$EnhancerBySpringCGLIB$$a391b5ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:49:22.285  INFO [main]  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98b75376] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:49:22.563  INFO [main]  TomcatWebServer:90 - Tomcat initialized with port(s): 28083 (http)
+10:49:22.574  INFO [main]  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-28083"]
+10:49:22.580  INFO [main]  StandardService:173 - Starting service [Tomcat]
+10:49:22.580  INFO [main]  StandardEngine:173 - Starting Servlet Engine: Apache Tomcat/9.0.12
+10:49:22.587  INFO [main]  AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+10:49:22.648  INFO [main]  [/]:173 - Initializing Spring embedded WebApplicationContext
+10:49:22.648  INFO [main]  ContextLoader:285 - Root WebApplicationContext: initialization completed in 1241 ms
+10:49:22.673  INFO [main]  ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+10:49:22.677  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:49:22.677  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:49:22.677  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'formContentFilter' to: [/*]
+10:49:22.678  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'requestContextFilter' to: [/*]
+10:49:22.678  INFO [main]  FilterRegistrationBean:248 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+10:49:23.307  INFO [main]  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+10:49:23.710  INFO [main]  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-28083"]
+10:49:23.713  INFO [main]  NioSelectorPool:173 - Using a shared selector for servlet write/read
+10:49:23.727  INFO [main]  TomcatWebServer:204 - Tomcat started on port(s): 28083 (http) with context path ''
+10:49:23.728  INFO [main]  Application:59 - Started Application in 2.695 seconds (JVM running for 3.076)
+10:49:27.092  INFO [http-nio-28083-exec-1]  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:49:27.092  INFO [http-nio-28083-exec-1]  DispatcherServlet:521 - Initializing Servlet 'dispatcherServlet'
+10:49:27.101  INFO [http-nio-28083-exec-1]  DispatcherServlet:543 - Completed initialization in 9 ms
+10:49:27.507  INFO [http-nio-28083-exec-2]  AbstractOpenApiResource:286 - Init duration for springdoc-openapi is: 252 ms
+14:36:44.444  INFO [http-nio-28083-exec-9]  HikariDataSource:110 - hikariCP - Starting...
+14:36:44.695  INFO [http-nio-28083-exec-9]  HikariDataSource:123 - hikariCP - Start completed.
+14:36:44.710 DEBUG [http-nio-28083-exec-9]  login:159 - ==>  Preparing: select admin_user_id, login_user_name, login_password, nick_name, locked from tb_admin_user where login_user_name = ? AND login_password=? AND locked = 0 
+14:36:44.737 DEBUG [http-nio-28083-exec-9]  login:159 - ==> Parameters: admin(String), a66abb5684c45962d887564f08346e8d(String)
+14:36:44.795 DEBUG [http-nio-28083-exec-9]  login:159 - <==      Total: 1
+14:36:47.306 DEBUG [http-nio-28083-exec-8]  findCategoryList:159 - ==>  Preparing: select category_id, category_name, category_icon, category_rank, is_deleted, create_time from tb_blog_category where is_deleted=0 order by category_rank desc,create_time desc limit ?,? 
+14:36:47.309 DEBUG [http-nio-28083-exec-8]  findCategoryList:159 - ==> Parameters: 0(Integer), 10(Integer)
+14:36:47.319 DEBUG [http-nio-28083-exec-8]  findCategoryList:159 - <==      Total: 3
+14:36:47.321 DEBUG [http-nio-28083-exec-8]  getCountCategories:159 - ==>  Preparing: select count(*) from tb_blog_category where is_deleted=0 
+14:36:47.323 DEBUG [http-nio-28083-exec-8]  getCountCategories:159 - ==> Parameters: 
+14:36:47.331 DEBUG [http-nio-28083-exec-8]  getCountCategories:159 - <==      Total: 1
+14:36:55.184 DEBUG [http-nio-28083-exec-10]  deleteBatch:159 - ==>  Preparing: update tb_blog_category set is_deleted=1 where category_id in ( ? ) 
+14:36:55.186 DEBUG [http-nio-28083-exec-10]  deleteBatch:159 - ==> Parameters: 1(Integer)
+14:36:55.192 DEBUG [http-nio-28083-exec-10]  deleteBatch:159 - <==    Updates: 1
+14:36:55.233 DEBUG [http-nio-28083-exec-9]  findCategoryList:159 - ==>  Preparing: select category_id, category_name, category_icon, category_rank, is_deleted, create_time from tb_blog_category where is_deleted=0 order by category_rank desc,create_time desc limit ?,? 
+14:36:55.234 DEBUG [http-nio-28083-exec-9]  findCategoryList:159 - ==> Parameters: 0(Integer), 10(Integer)
+14:36:55.236 DEBUG [http-nio-28083-exec-9]  findCategoryList:159 - <==      Total: 2
+14:36:55.237 DEBUG [http-nio-28083-exec-9]  getCountCategories:159 - ==>  Preparing: select count(*) from tb_blog_category where is_deleted=0 
+14:36:55.238 DEBUG [http-nio-28083-exec-9]  getCountCategories:159 - ==> Parameters: 
+14:36:55.239 DEBUG [http-nio-28083-exec-9]  getCountCategories:159 - <==      Total: 1
+19:03:53.482  INFO [Thread-3]  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+19:03:53.521  INFO [Thread-3]  HikariDataSource:350 - hikariCP - Shutdown initiated...
+19:03:53.523  INFO [Thread-3]  HikariDataSource:352 - hikariCP - Shutdown completed.
