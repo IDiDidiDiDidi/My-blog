@@ -23,6 +23,12 @@ public interface BlogService {
      */
     String updateBlog(Blog blog);
 
+    /**
+     * 分页查询所有的博客
+     *
+     * @param pageUtil
+     * @return
+     */
     PageResult getBlogsPage(PageQueryUtil pageUtil);
 
     Boolean deleteBatch(Integer[] ids);

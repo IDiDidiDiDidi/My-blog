@@ -1,7 +1,10 @@
 package com.liudi.dao;
 
 import com.liudi.pojo.Blog;
+import com.liudi.utils.PageQueryUtil;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,4 +27,20 @@ public interface BlogMapper {
     int updateByPKWithBlogs(Blog record);
 
     int updateByPK(Blog record);
+
+    /**
+     * 分页查询blogs
+     * @param pageUtil
+     * @return
+     */
+    List<Blog> findBlogList(PageQueryUtil pageUtil);
+
+    /**
+     * blogs 总数
+     *
+     * @return
+     */
+    int countBlogs();
+
+    int deleteBatch(Integer[] ids);
 }
