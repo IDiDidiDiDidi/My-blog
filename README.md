@@ -1,7 +1,6 @@
 # My-blog
 
-测试 git merge
-
+这是一个博客系统，根据十三的博客系统，模仿写的一个SpringBoot+Mybatis+Thymeleaf 个人博客
 
 博客后台控制是整合的：AdminLTE3  
 http://localhost:8080/login.html 登录页面
