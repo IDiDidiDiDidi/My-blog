@@ -1,0 +1,13 @@
+log
+logs/**
+target
+target/**
+.idea
+.idea/**
+.classpath
+.project
+.project/**
+.settings
+.settings/**
+*.sh
+*.iml
