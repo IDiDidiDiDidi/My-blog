@@ -17,13 +17,13 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/admin")
 public class LinkController {
-//    @Resource
-//    private LinkService linkService;
-//
-//    @GetMapping("/links")
-//    public String linkPage(HttpServletRequest request) {
-//        request.setAttribute("path", "links");
-//        return "admin/link";
-//    }
+    @Resource
+    private LinkService linkService;
+
+    @GetMapping("/links")
+    public String linkPage(HttpServletRequest request) {
+        request.setAttribute("path", "links");
+        return "admin/link";
+    }
 
 }
